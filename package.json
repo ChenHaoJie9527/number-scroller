@@ -1,0 +1,35 @@
+{
+  "name": "butterfly-react",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "f2elintLint": "pnpm f2elint init",
+    "f2elint-scan": "pnpm f2elint scan",
+    "f2elint-fix": "pnpm f2elint fix"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "f2elint": "^2.2.1",
+    "postcss-scss": "^4.0.7",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "f2elint commit-file-scan",
+      "commit-msg": "f2elint commit-msg-scan"
+    }
+  }
+}

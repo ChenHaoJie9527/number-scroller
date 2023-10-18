@@ -1,0 +1,15 @@
+.countContainer {
+  position: relative;
+  text-align: center;
+  font-size: 120px;
+  line-height: 1em;
+  color: #fff;
+  height: 1em;
+  min-width: 1em;
+  max-width: 3em;
+  background: #000000;
+  overflow: hidden;
+  .rollNumber {
+     width: 100%;
+  }
+}
